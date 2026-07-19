@@ -1,0 +1,32 @@
+¿Qué representa <main>?
+Representa el contenido principal del cuerpo de un documento o aplicación. Solo debe haber un elemento <main> por página, y este no debe incluir contenido que se repita en otros documentos, como barras laterales, enlaces de navegación o logotipos.
+
+¿Cuándo usar <article>?
+Se utiliza para envolver contenido que es independiente, autónomo o distribuible por sí mismo, como una entrada de blog, una noticia, un comentario o un foro, que tendría sentido incluso fuera del contexto del sitio web donde se encuentra.
+
+¿Para qué sirve <label>?
+Define una etiqueta para un elemento de formulario (como un <input>). Es fundamental para la accesibilidad, ya que permite que los lectores de pantalla asocien el texto con el campo correspondiente y aumenta el área de clic para los usuarios.
+
+¿Diferencia entre id y name?
+
+id: Es un identificador único para un elemento en todo el documento. Se utiliza principalmente para CSS, JavaScript (DOM) y para enlazar etiquetas (<label>) con inputs.
+
+name: Se utiliza para identificar los datos cuando se envía un formulario al servidor. A diferencia del id, puede haber varios elementos con el mismo name (especialmente en botones de radio o checkboxes).
+
+¿Cuándo usar una tabla?
+Las tablas solo deben usarse para datos tabulares (información que tiene una relación lógica entre filas y columnas). Nunca deben usarse para el diseño visual o el layout de una página web.
+
+¿Para qué sirve alt?
+Es el texto alternativo de una imagen. Proporciona una descripción textual para usuarios con discapacidad visual (lectores de pantalla), aparece si la imagen no carga y ayuda a los motores de búsqueda a entender el contenido de la imagen (SEO).
+
+¿Qué significa navegación por teclado?
+Es la capacidad de navegar a través de todos los elementos interactivos de una web (enlaces, botones, formularios) utilizando únicamente la tecla Tab y otras combinaciones de teclado, sin necesidad de usar un ratón. Es un pilar de la accesibilidad web.
+
+¿Por qué no usar <h4> solo por tamaño?
+Las etiquetas de encabezado (<h1> a <h6>) definen la jerarquía semántica del documento, no su apariencia visual. Los navegadores y lectores de pantalla las usan para crear un "mapa" del contenido. Si usas un <h4> solo porque es "más pequeño", estarás rompiendo la estructura lógica del documento para los usuarios con tecnologías de asistencia.
+
+¿Qué aporta meta description?
+Es un resumen breve del contenido de una página que los buscadores (como Google) suelen mostrar en los resultados de búsqueda. Aunque no afecta directamente al ranking, un buen texto persuasivo en la meta description puede aumentar la tasa de clics (CTR).
+
+¿Qué práctica mejora accesibilidad y SEO?
+Muchas de las anteriores, pero en resumen: usar HTML semántico correctamente. Esto incluye usar etiquetas como <header>, <main>, <footer>, <nav>, encabezados bien jerarquizados (<h1> al <h6>), proporcionar texto alternativo en imágenes y asegurar una navegación por teclado lógica y funcional.
