@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="TechStore es una tienda de productos tecnológicos para estudiantes y profesionales.">
+
+    <meta name="keywords"
+        content="tecnología, computadoras, accesorios, tienda tecnológica">
+
+    <meta name="author" content="Joselin Vásquez">
+
+    <title>TechStore | Tecnología para todos</title>
+</head>
+
+<body id="inicio">
+
+    <header>
+        <h1>TechStore</h1>
+        <p>Tecnología para todos</p>
+    </header>
+
+    <nav aria-label="Navegación principal">
+        <ul>
+            <li>
+                <a href="#inicio">Inicio</a>
+            </li>
+
+            <li>
+                <a href="#productos">Productos</a>
+            </li>
+
+            <li>
+                <a href="#nosotros">Nosotros</a>
+            </li>
+
+            <li>
+                <a href="#contacto">Contacto</a>
+            </li>
+
+            <li>
+                <a href="pages/productos.html">Catálogo completo</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section aria-labelledby="titulo-bienvenida">
+
+            <h2 id="titulo-bienvenida">Bienvenidos a TechStore</h2>
+
+            <p>
+                Encuentra productos tecnológicos útiles para estudiar,
+                trabajar y realizar tus actividades diarias.
+            </p>
+
+            <img
+                src="assets/img/laptop.jpg"
+                alt="Computadora portátil sobre un escritorio de trabajo"
+                width="500">
+        </section>
+
+        <section id="productos" aria-labelledby="titulo-productos">
+
+            <h2 id="titulo-productos">Productos destacados</h2>
+
+            <article>
+                <h3>Computadora portátil</h3>
+
+                <p>
+                    Equipo diseñado para estudiantes y profesionales que
+                    necesitan trabajar desde diferentes lugares.
+                </p>
+
+                <p>
+                    <strong>Precio:</strong> Q5,500.00
+                </p>
+            </article>
+
+            <article>
+                <h3>Teclado inalámbrico</h3>
+
+                <p>
+                    Teclado cómodo y práctico para computadoras de escritorio,
+                    portátiles y tabletas.
+                </p>
+
+                <p>
+                    <strong>Precio:</strong> Q250.00
+                </p>
+            </article>
+
+            <article>
+                <h3>Audífonos con micrófono</h3>
+
+                <p>
+                    Audífonos ideales para clases virtuales, reuniones,
+                    videojuegos y llamadas.
+                </p>
+
+                <p>
+                    <strong>Precio:</strong> Q175.00
+                </p>
+            </article>
+
+            <h3>Tabla de productos</h3>
+
+            <table border="1">
+
+                <caption>
+                    Comparación de productos disponibles
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Categoría</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Disponibilidad</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Computadora portátil</td>
+                        <td>Computación</td>
+                        <td>Q5,500.00</td>
+                        <td>Disponible</td>
+                    </tr>
+
+                    <tr>
+                        <td>Teclado inalámbrico</td>
+                        <td>Accesorios</td>
+                        <td>Q250.00</td>
+                        <td>Disponible</td>
+                    </tr>
+
+                    <tr>
+                        <td>Audífonos con micrófono</td>
+                        <td>Audio</td>
+                        <td>Q175.00</td>
+                        <td>Agotado</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <section id="nosotros" aria-labelledby="titulo-nosotros">
+
+            <h2 id="titulo-nosotros">Sobre nosotros</h2>
+
+            <p>
+                TechStore es una tienda dedicada a ofrecer productos
+                tecnológicos funcionales y accesibles para estudiantes,
+                trabajadores y pequeños negocios.
+            </p>
+
+            <h3>Servicios disponibles</h3>
+
+            <ul>
+                <li>Garantía de un año.</li>
+                <li>Envío a domicilio.</li>
+                <li>Servicio técnico.</li>
+                <li>Asesoría para seleccionar productos.</li>
+            </ul>
+
+            <h3>Proceso de compra</h3>
+
+            <ol>
+                <li>Selecciona el producto.</li>
+                <li>Consulta su disponibilidad.</li>
+                <li>Completa tus datos de compra.</li>
+                <li>Realiza el pago.</li>
+                <li>Recibe el producto en tu domicilio.</li>
+            </ol>
+
+            <h3>Conceptos importantes</h3>
+
+            <dl>
+                <dt>HTML</dt>
+                <dd>
+                    Lenguaje de marcado utilizado para estructurar el
+                    contenido de una página web.
+                </dd>
+
+                <dt>CSS</dt>
+                <dd>
+                    Lenguaje utilizado para modificar la apariencia y
+                    presentación de una página web.
+                </dd>
+
+                <dt>Accesibilidad web</dt>
+                <dd>
+                    Práctica que permite que los sitios web puedan ser
+                    utilizados por la mayor cantidad de personas posible.
+                </dd>
+            </dl>
+
+        </section>
+
+        <section id="contacto" aria-labelledby="titulo-contacto">
+
+            <h2 id="titulo-contacto">Contáctenos</h2>
+
+            <p>
+                Complete el siguiente formulario para solicitar información
+                sobre nuestros productos.
+            </p>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="nombre">Nombre completo:</label>
+                    <br>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        autocomplete="name"
+                        required>
+                </p>
+
+                <p>
+                    <label for="correo">Correo electrónico:</label>
+                    <br>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        autocomplete="email"
+                        required>
+                </p>
+
+                <p>
+                    <label for="telefono">Número de teléfono:</label>
+                    <br>
+
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        autocomplete="tel"
+                        placeholder="5555-5555">
+                </p>
+
+                <p>
+                    <label for="producto">Producto de interés:</label>
+                    <br>
+
+                    <select id="producto" name="producto">
+                        <option value="">Seleccione un producto</option>
+                        <option value="laptop">Computadora portátil</option>
+                        <option value="teclado">Teclado inalámbrico</option>
+                        <option value="audifonos">
+                            Audífonos con micrófono
+                        </option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="mensaje">Mensaje:</label>
+                    <br>
+
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        cols="40"
+                        required></textarea>
+                </p>
+
+                <p>
+                    <input
+                        type="checkbox"
+                        id="informacion"
+                        name="informacion">
+
+                    <label for="informacion">
+                        Deseo recibir información sobre nuevos productos.
+                    </label>
+                </p>
+
+                <button type="submit">Enviar mensaje</button>
+
+                <button type="reset">Limpiar formulario</button>
+
+            </form>
+
+            <p>
+                También puede visitar nuestra
+                <a href="pages/contacto.html">
+                    página de contacto
+                </a>.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; 2026 TechStore. Todos los derechos reservados.
+        </p>
+
+        <p>
+            <a href="#inicio">Volver al inicio</a>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
