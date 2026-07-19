@@ -30,6 +30,6 @@ semana-02-html5/
 
 ## Autor
 
-Joselin Vásquez
+Ximena Aguilar 
 Ingeniería en Sistemas
 Universidad Mariano Gálvez de Guatemala
