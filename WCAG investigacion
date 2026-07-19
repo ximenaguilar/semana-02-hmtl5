@@ -1,0 +1,59 @@
+Pautas de Accesibilidad para el Contenido Web (WCAG) 
+
+1. ¿Qué son las WCAG y Fuentes Oficiales? 
+
+Las WCAG (Web Content Accessibility Guidelines) son el estándar global desarrollado por el W3C (World Wide Web Consortium) a través de la Iniciativa de Accesibilidad Web (WAI). Su objetivo es garantizar que el contenido digital sea accesible para personas con discapacidades visuales, auditivas, motoras, cognitivas y neurológicas. 
+
+Fuente Oficial Principal: W3C Web Accessibility Initiative (WAI) - WCAG Overview 
+
+Especificación Técnica: WCAG 2.2 Quick Reference 
+
+2. Los 4 Principios Fundamentales (POUR) 
+
+Las pautas se organizan bajo cuatro principios esenciales. Si un sitio web falla en cualquiera de estos, los usuarios con discapacidades no podrán utilizarlo: 
+
+Perceptible (Perceivable): La información y los componentes de la interfaz de usuario deben ser mostrados de manera que los usuarios puedan percibirlos (no puede ser invisible a todos sus sentidos). 
+
+Ejemplo: Incluir textos alternativos para imágenes o subtítulos en videos. 
+
+Operable (Operable): Los componentes de la interfaz y la navegación deben ser utilizables. La interfaz no puede requerir una interacción que el usuario no pueda realizar. 
+
+Ejemplo: Que toda la web se pueda controlar y navegar usando únicamente el teclado. 
+
+Comprensible (Understandable): La información y el manejo de la interfaz de usuario deben ser fáciles de entender. 
+
+Ejemplo: Mensajes de error claros en los formularios que expliquen cómo corregirlos en lugar de códigos genéricos. 
+
+Robusto (Robust): El contenido debe ser lo suficientemente robusto como para ser interpretado de manera fiable por una amplia variedad de aplicaciones de usuario, incluyendo tecnologías de asistencia (como lectores de pantalla). 
+
+Ejemplo: Usar HTML semántico limpio y estándar para que los navegadores y lectores de pantalla no se confundan al procesarlo. 
+
+3. Identificación de Mejoras de Accesibilidad en Nuestra Página 
+
+Nota: Para cumplir con la tarea, evalúa el estado actual del código de tu proyecto o frontend y selecciona las mejoras que apliquen directamente: 
+
+Principio: Perceptible (Texto alternativo ausente) 
+
+Hallazgo: Se detectó que algunas imágenes decorativas o de componentes clave carecen del atributo alt, o este se encuentra vacío en elementos que aportan valor visual. 
+
+Mejora: Implementar descripciones textuales claras utilizando alt="Descripción de la imagen" para que los lectores de pantalla puedan transmitir el contexto a los usuarios con discapacidad visual. 
+
+Principio: Operable (Foco de navegación por teclado oculto) 
+
+Hallazgo: Al navegar usando la tecla Tab, el indicador visual de foco (:focus) está deshabilitado por estilos CSS personalizados, impidiendo saber qué elemento interactivo está seleccionado. 
+
+Mejora: Mantener o diseñar un anillo de enfoque de alto contraste mediante CSS (outline) para garantizar una navegación por teclado completamente funcional. 
+
+Principio: Comprensible (Etiquetado deficiente de formularios) 
+
+Hallazgo: Algunos campos de entrada (<input>) no están correctamente enlazados con sus respectivas etiquetas <label>, o dependen únicamente de un placeholder que desaparece al escribir. 
+
+Mejora: Vincular explícitamente cada etiqueta usando los atributos id y for (ej. <label for="username"> e <input id="username">) asegurando que la estructura sea semántica y accesible. 
+
+Principio: Robusto (Anidación o jerarquía de encabezados rota) 
+
+Hallazgo: Se saltan niveles en la estructura de títulos (por ejemplo, pasando de un <h1> directamente a un <h4> simplemente para ajustar el tamaño del texto). 
+
+Mejora: Reestructurar la jerarquía de encabezados de forma estrictamente secuencial (<h1> $\rightarrow$ <h2> $\rightarrow$ <h3>) y controlar la apariencia visual e interfaz exclusivamente a través de reglas CSS. 
+
+ 
